@@ -32,8 +32,8 @@ h1 {
 
 .sketchpadDiv {
   background-color: #ffffff;
-  height: 5px;
-  width: 15px;
+  height: calc(var(--size)*1px);
+  width: calc(var(--size)*1px);
 }
 
 .mouseovered {

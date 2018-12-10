@@ -3,7 +3,7 @@ const sketchpad = document.querySelector("#sketchpad");
 
 // generate sketchpad divs
 const generateDivs = (rowSize = 16) => {
-  let text = `<div class = "sketchpadDiv"></div>`.repeat(`${rowSize}`);
+  let text = `<div class = "sketchpadDiv"></div>`.repeat(`${rowSize*rowSize}`);
   sketchpad.innerHTML = text;
 }
 
