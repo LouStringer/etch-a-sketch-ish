@@ -12,7 +12,8 @@
   font-family: 'Raleway', 'Helvetica Neue', sans-serif;
   text-align: center;
   font-size: 1rem;
-  background-color: #E6E6FA;
+  background-color: #CFF0E0;
+  color: #41494E;
 }
 
 h1 {
@@ -20,11 +21,21 @@ h1 {
   font-size: 1.5rem;
 }
 
-.sketchpad {
+#sketchpad {
   display: flex;
   height: 80vh;
   width: 80vh;
   margin: 15px auto;
-  border: 3px solid black;
+  border: 3px solid;
   border-radius: 3px;
+}
+
+.sketchpadDiv {
+  background-color: #ffffff;
+  height: 5px;
+  width: 15px;
+}
+
+.mouseovered {
+  background-color: #DDADDD;
 }
