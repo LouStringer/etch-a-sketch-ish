@@ -1,10 +1,16 @@
 //setup (with default row size)
 const sketchpad = document.querySelector("#sketchpad");
 
-// generate sketchpad divs
+// generate & size sketchpad inner divs
 const generateDivs = (rowSize = 16) => {
-  let text = `<div class = "sketchpadDiv"></div>`.repeat(`${rowSize*rowSize}`);
-  sketchpad.innerHTML = text;
+  // let text = `<div class = "sketchpadDiv"></div>`.repeat(16*16);
+  sketchpad.innerHTML = `<div class = "sketchpadDiv"></div>`.repeat(`${rowSize*rowSize}`);
+  const size = sketchpad.clientHeight / rowSize
+  const sketchpadDivs = Array.from(document.querySelectorAll(".sketchpadDiv"));
+  sketchpadDivs.forEach(item => {
+    item.style.setProperty('--height', size);
+    item.style.setProperty('--width', size);
+  });
 }
 
 generateDivs()
