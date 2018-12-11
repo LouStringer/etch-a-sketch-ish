@@ -32,9 +32,10 @@ h1 {
 }
 
 .sketchpadDiv {
+  --size: '';
+  height: var(--size);
+  width: var(--size);
   background-color: #ffffff;
-  height: calc(var(--height)*1px);
-  width: calc(var(--width)*1px);
 }
 
 .mouseovered {

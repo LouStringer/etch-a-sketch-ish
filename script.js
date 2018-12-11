@@ -8,8 +8,7 @@ const generateDivs = (rowSize = 16) => {
   const size = sketchpad.clientHeight / rowSize
   const sketchpadDivs = Array.from(document.querySelectorAll(".sketchpadDiv"));
   sketchpadDivs.forEach(item => {
-    item.style.setProperty('--height', size);
-    item.style.setProperty('--width', size);
+    item.style.setProperty('--size', `${size}px`);
   });
 }
 
