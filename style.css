@@ -12,13 +12,30 @@
   font-family: 'Raleway', 'Helvetica Neue', sans-serif;
   text-align: center;
   font-size: 1rem;
-  background-color: #CFF0E0;
+  background-color: #E6F5F2;
   color: #41494E;
+}
+
+*:focus { /* replaced on elements later */
+  outline: none;
 }
 
 h1 {
   padding: 15px;
   font-size: 1.5rem;
+}
+
+button.reset {
+  margin: 5px;
+  border: 2px solid #BAC0C5;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+button.reset:focus {
+  border: 2px solid #ffffff;
+  background-color: #DEE3E6;
 }
 
 #sketchpad {
@@ -28,7 +45,7 @@ h1 {
   width: 80vh;
   margin: 15px auto;
   border: 3px solid;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .sketchpadDiv {

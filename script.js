@@ -1,15 +1,27 @@
 //setup (with default row size)
 const sketchpad = document.querySelector("#sketchpad");
 
+// change colour function
+const changeColour = function() {
+  this.classList.add('mouseovered')
+}
+
 // generate & size sketchpad inner divs
 const generateDivs = (rowSize = 16) => {
-  // let text = `<div class = "sketchpadDiv"></div>`.repeat(16*16);
   sketchpad.innerHTML = `<div class = "sketchpadDiv"></div>`.repeat(`${rowSize*rowSize}`);
   const size = sketchpad.clientHeight / rowSize
-  const sketchpadDivs = Array.from(document.querySelectorAll(".sketchpadDiv"));
-  sketchpadDivs.forEach(item => {
+  document.querySelectorAll(".sketchpadDiv").forEach(item => {
     item.style.setProperty('--size', `${size}px`);
+    item.addEventListener('mouseover', changeColour);
   });
 }
 
+// reset button
+const resetButton = document.querySelector("button.reset");
+const resetColour = function() {
+  document.querySelectorAll(".sketchpadDiv").forEach(item => item.classList.remove('mouseovered'))
+}
+resetButton.addEventListener('click', resetColour);
+
+// initialise!
 generateDivs()
