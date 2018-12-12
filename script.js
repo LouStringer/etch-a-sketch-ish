@@ -23,5 +23,14 @@ const resetColour = function() {
 }
 resetButton.addEventListener('click', resetColour);
 
+// slider to change pixellation
+const changeRowSizeSlider = document.querySelector("#changeRowSize");
+const changeRowSize = function() {
+  const rowSize = changeRowSizeSlider.value;
+  sketchpad.innerHTML = "";
+  generateDivs(rowSize);
+}
+changeRowSizeSlider.addEventListener('change', changeRowSize);
+
 // initialise!
 generateDivs()

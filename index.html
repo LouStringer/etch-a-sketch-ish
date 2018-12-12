@@ -10,8 +10,12 @@
 <body>
   <h1>etch-a-sketch-ish</h1>
   <h2>use your mouse to draw your masterpiece on the sketchpad</h2>
-  <button class="reset">new page!</button>
-  <div id="sketchpad"></div>
+  <section class="controls">
+    <button class="reset">new page!</button>
+    <input type="range" id="changeRowSize" name="slider" min="16" max="128" value="16">
+    <label for="slider">pixellation</label>
+  </section>
+  <main id="sketchpad"></main>
   <script src="script.js"></script>
 </body>
 </html>

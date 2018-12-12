@@ -38,6 +38,10 @@ button.reset:focus {
   background-color: #DEE3E6;
 }
 
+input#changeRowSize {
+  margin: 5px 5px 5px 15px;
+}
+
 #sketchpad {
   display: flex;
   flex-wrap: wrap;
