@@ -12,7 +12,7 @@
   font-family: 'Raleway', 'Helvetica Neue', sans-serif;
   text-align: center;
   font-size: 1rem;
-  background-color: #E6F5F2;
+  background-color: #F1F3F4;
   color: #41494E;
 }
 
@@ -22,31 +22,31 @@
 
 h1 {
   padding: 15px;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
-button.reset {
-  margin: 5px;
+button {
+  margin: 5px 15px;
   border: 2px solid #BAC0C5;
   border-radius: 5px;
   padding: 5px;
   background-color: #ffffff;
 }
 
-button.reset:focus {
+button:focus {
   border: 2px solid #ffffff;
   background-color: #DEE3E6;
 }
 
-input#changeRowSize {
-  margin: 5px 5px 5px 15px;
+input {
+  margin: 5px 0px 5px 10px;
 }
 
 #sketchpad {
   display: flex;
   flex-wrap: wrap;
-  height: 80vh;
-  width: 80vh;
+  height: 70vh;
+  width: 70vh;
   margin: 15px auto;
   border: 3px solid;
   border-radius: 5px;
